@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sandeep's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="brand">Sandeep's portfolio<span style="color: var(--accent);">.</span></div>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="overline">Frontend Developer & Designer</p>
+          <h1>
+            Hi, my name is <span>Sandeep</span>
+          </h1>
+          <p class="description">
+            I build modern, responsive websites with beautiful interactions and clean code. I create user-first web experiences that look great on every screen.
+          </p>
+          <p class="typed-intro">
+            and I am a passionate <span id="typed-text"></span>
+          </p>
+          <div class="hero-actions">
+            <a class="button-primary" href="#projects">See Projects</a>
+            <a class="button-secondary" href="#contact">Let's Talk</a>
+          </div>
+          <div class="hero-badges">
+            <span class="badge">UI/UX</span>
+            <span class="badge">React</span>
+            <span class="badge">HTML & CSS</span>
+            <span class="badge">Responsive</span>
+          </div>
+        </div>
+
+        <div class="hero-panel">
+          <div class="hero-panel-content">
+            <img src="bg.png" alt="Portfolio preview image" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="section-title">
+          <span>01</span>
+          <h2>About Me</h2>
+        </div>
+        <p>
+          I am a passionate web developer who loves turning ideas into beautiful and functional websites. My focus is on creating intuitive layouts, smooth animations, and clean, maintainable code.
+        </p>
+
+        <div class="cards-grid">
+          <div class="card">
+            <h3>Experience</h3>
+            <p>I design and build responsive interfaces that stay clean, readable, and easy to use.</p>
+          </div>
+          <div class="card">
+            <h3>Skills</h3>
+            <p>HTML, CSS, JavaScript, Typed.js, responsive layouts, and modern design systems.</p>
+          </div>
+          <div class="card">
+            <h3>Mission</h3>
+            <p>Deliver polished portfolio websites that help businesses and creators stand out online.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-title">
+          <span>02</span>
+          <h2>Featured Projects</h2>
+        </div>
+        <p>
+          A selection of work that highlights my approach to responsive design, clean UI, and polished interactions.
+        </p>
+
+        <div class="project-grid">
+          <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>A modern personal website with a strong visual layout, interactive hero, and polished section design.</p>
+          </div>
+          <div class="project-card">
+            <h3>Landing Page</h3>
+            <p>Converted product ideas into responsive landing pages that clearly present features and calls to action.</p>
+          </div>
+          <div class="project-card">
+            <h3>UI Interaction</h3>
+            <p>Designed animated components and text effects to make the interface feel lively and memorable.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="section-title">
+          <span>03</span>
+          <h2>Contact</h2>
+        </div>
+        <div class="contact-card">
+          <p>If you have a project idea or want to collaborate, feel free to reach out.</p>
+          <p>Email: <a href="mailto:sandeepsingh998355@gmail.com">sandeepsingh998355@gmail.com</a></p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/sandeep-singh-48a466375" target="_blank" rel="noreferrer">linkedin.com/in/Sandeep Singh</a></p>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('#typed-text', {
+        strings: ['Web Developer.', 'Web Designer.'],
+        typeSpeed: 50,
+        backSpeed: 25,
+        backDelay: 1200,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
